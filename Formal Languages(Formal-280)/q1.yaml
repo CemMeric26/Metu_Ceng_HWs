@@ -1,0 +1,47 @@
+name: q1
+source code: |+
+
+  input: '00001111'
+  blank: ' '
+
+  start state: q0
+  table:
+    q0:
+      0: {R: q5}
+      ' ': {R: accept}
+      
+      
+    q1:
+      1: R
+      ' ': {L: q2}
+
+    q2:
+      1: {write: ' ', L: q3}
+      
+    q3:
+      [1,0]: L
+      ' ': {R: q4}
+      
+    q4:
+      0: {write: ' ', R: q0}
+
+    
+    q5:
+      0: R
+      1: {R: q1}
+      
+     
+    accept:
+
+
+
+
+
+positions:
+  q0: {x: 169.42, y: 409.19}
+  q1: {x: 323.98, y: 269.88}
+  q2: {x: 295.41, y: 99.85}
+  q3: {x: 600.82, y: 357.37}
+  q4: {x: 393.11, y: 382.05, fixed: false}
+  q5: {x: 196.94, y: 264.82, fixed: false}
+  accept: {x: 80, y: 250}

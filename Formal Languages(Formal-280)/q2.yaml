@@ -1,0 +1,55 @@
+name: q2
+source code: |+
+
+  input: '1010001' 
+  blank: ' '
+  start state: start
+  synonyms:
+    accept: {R: accept}
+    reject: {R: reject}
+
+  table:
+    start:
+      [1,0]: R
+      ' ': {L: last}
+    last:
+      1: {write: X, R: haveA} 
+      0: {write: Y, R: haveB}
+      [X,Y]: L
+      
+    haveA:
+      [1,0,X,Y]: R
+      ' ': {write: 1, L: beginning}
+      
+    haveB:
+      [1,0,X,Y]: R
+      ' ': {write: 0, L: beginning}
+      
+    beginning:
+      [1,0]: L
+      X: {L: inter}
+      Y: {L: inter}
+    
+    inter:
+      [1,0]: {R: last}
+      [X,Y]: L
+      ' ': {R: write_op}
+    write_op:
+      X: {write: 1, R: write_op}
+      Y: {write: 0, R: write_op}
+      [1,0]: {R: accept}
+    accept:
+    reject:
+
+
+
+positions:
+  start: {x: 400, y: 185}
+  last: {x: 296.71, y: 367.77}
+  haveA: {x: 240, y: 185}
+  haveB: {x: 560, y: 185}
+  beginning: {x: 446.54, y: 235.24}
+  inter: {x: 529.57, y: 379.03}
+  write_op: {x: 530.73, y: 101.99}
+  accept: {x: 386.85, y: 61.07}
+  reject: {x: 400, y: 445}
