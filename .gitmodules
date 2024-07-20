@@ -19,3 +19,12 @@
 [submodule "ceng477-hw3"]
 	path = ceng477-hw3
 	url = https://github.com/CemMeric26/graphics_hw3.git
+[submodule "ceng443-hw1"]
+	path = ceng443-hw1
+	url = https://github.com/CemMeric26/oop-solid.git
+[submodule "ceng443-hw3"]
+	path = ceng443-hw3
+	url = https://github.com/CemMeric26/OOP-streams.git
+[submodule "ceng443-hw2"]
+	path = ceng443-hw2
+	url = https://github.com/CemMeric26/oop-thread.git
