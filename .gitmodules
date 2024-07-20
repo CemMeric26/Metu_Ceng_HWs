@@ -10,3 +10,12 @@
 [submodule "ceng334-hw1"]
 	path = ceng334-hw1
 	url = https://github.com/CemMeric26/ceng334-hw1
+[submodule "ceng477-hw1"]
+	path = ceng477-hw1
+	url = https://github.com/CemMeric26/ceng477-hw1.git
+[submodule "ceng477-hw2"]
+	path = ceng477-hw2
+	url = https://github.com/CemMeric26/ceng477-hw2.git
+[submodule "ceng477-hw3"]
+	path = ceng477-hw3
+	url = https://github.com/CemMeric26/graphics_hw3.git
