@@ -28,3 +28,6 @@
 [submodule "ceng443-hw2"]
 	path = ceng443-hw2
 	url = https://github.com/CemMeric26/oop-thread.git
+[submodule "ceng435-pa"]
+	path = ceng435-pa
+	url = https://github.com/CemMeric26/socket-pa.git
